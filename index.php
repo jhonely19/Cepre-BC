@@ -1,10 +1,10 @@
 <?php
 
 require_once "config/Conexion.php";
-
 require_once "model/UsuarioModel.php";
-
 require_once "controller/LoginController.php";
+require_once "model/EstudianteModel.php";
+require_once "controller/EstudianteController.php";
 
 $ruta = "login";
 
@@ -23,6 +23,11 @@ if($ruta == "login"){
 if($ruta == "dashboard"){
 
     include "views/dashboard.php";
+
+}
+if($ruta == "estudiantes"){
+
+    include "views/estudiantes.php";
 
 }
 

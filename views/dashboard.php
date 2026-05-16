@@ -64,7 +64,7 @@ if(!isset($_SESSION["login"])){
             </li>
 
             <li>
-                <a href="#">
+                <a href="index.php?ruta=estudiantes">
                     <i class="fa-solid fa-user-graduate"></i>
                     Estudiantes
                 </a>
