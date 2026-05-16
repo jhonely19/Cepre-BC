@@ -1,0 +1,39 @@
+body{
+    overflow: hidden;
+    font-family: Arial;
+}
+
+.fondo{
+    background: linear-gradient(
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.6)
+    ),
+    url('../../imagenes/fondo.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.login-box{
+
+    width: 100%;
+    max-width: 400px;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+
+    background: white;
+}
