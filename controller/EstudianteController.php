@@ -37,7 +37,7 @@ class EstudianteController{
 
                 $foto = $_FILES["foto"]["name"];
 
-                $ruta = "assets/img/".$foto;
+                $ruta = "assets/img/estudiantes/".$foto;
 
                 move_uploaded_file(
                     $_FILES["foto"]["tmp_name"],
@@ -100,7 +100,7 @@ class EstudianteController{
             $foto = $fotoActual;
             if(isset($_FILES["foto"]["tmp_name"]) && !empty($_FILES["foto"]["tmp_name"])){
                 $foto = $_FILES["foto"]["name"];
-                $ruta = "assets/img/".$foto;
+                $ruta = "assets/img/estudiantes/".$foto;
                 move_uploaded_file($_FILES["foto"]["tmp_name"], $ruta);
             }
 

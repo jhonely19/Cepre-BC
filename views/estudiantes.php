@@ -359,7 +359,7 @@ $estEditar = $idEditar ? EstudianteController::obtenerEstudiante($idEditar) : nu
                             <td>
 
                             <img
-    src="assets/img/<?php echo $est["foto"]; ?>"
+    src="assets/img/estudiantes/<?php echo $est["foto"]; ?>"
     width="50"
    height="50"
     style="border-radius:50%; object-fit:cover;"

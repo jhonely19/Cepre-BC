@@ -79,7 +79,7 @@ if(!isset($_SESSION["login"])){
             </li>
 
             <li>
-                <a href="#">
+                <a href="index.php?ruta=docente" class="btn btn-primary">
                     <i class="fa-solid fa-chalkboard-user"></i>
                     Docentes
                 </a>
