@@ -1,6 +1,6 @@
 <?php
 
-require_once "model/EstudianteModel.php";
+require_once "model/Estudiante.php";
 
 class EstudianteController{
 

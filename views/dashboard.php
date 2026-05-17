@@ -86,7 +86,7 @@ if(!isset($_SESSION["login"])){
             </li>
 
             <li>
-                <a href="#">
+                <a href="index.php?ruta=ciclo" class="btn btn-primary">
                     <i class="fa-solid fa-layer-group"></i>
                     Ciclos
                 </a>
@@ -114,14 +114,14 @@ if(!isset($_SESSION["login"])){
             </li>
 
             <li>
-                <a href="#">
+                <a href="index.php?ruta=matricula" class="btn btn-primary">
                     <i class="fa-solid fa-file-signature"></i>
                     Matrículas
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a href="index.php?ruta=evaluacion" class="btn btn-primary">
                     <i class="fa-solid fa-clipboard-check"></i>
                     Evaluaciones
                 </a>
