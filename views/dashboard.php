@@ -107,7 +107,7 @@ if(!isset($_SESSION["login"])){
             </li>
 
             <li>
-                <a href="#">
+                <a href="index.php?ruta=horario" class="btn btn-primary">
                     <i class="fa-solid fa-clock"></i>
                     Horarios
                 </a>

@@ -50,6 +50,11 @@ if($ruta == "aula"){
     include "views/aula.php";
 
 }
+if($ruta == "horario"){
+
+    include "views/horario.php";
+
+}
 // alias por compatibilidad
 if($ruta == "apoderados"){
 
