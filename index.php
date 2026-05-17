@@ -127,5 +127,10 @@ if($ruta == "asistencia"){
     include "views/asistencia.php";
 
 }
+if($ruta == "pago"){
+
+    include "views/pago.php";
+
+}
 
 ?>

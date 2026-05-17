@@ -142,7 +142,7 @@ if(!isset($_SESSION["login"])){
             </li>
 
             <li>
-                <a href="#">
+                <a href="index.php?ruta=pago" class="btn btn-primary">
                     <i class="fa-solid fa-money-bill-wave"></i>
                     Pagos
                 </a>
