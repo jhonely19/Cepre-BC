@@ -116,5 +116,10 @@ if($ruta == "evaluacion"){
     include "views/evaluacion.php";
 
 }
+if($ruta == "nota"){
+
+    include "views/nota.php";
+
+}
 
 ?>
