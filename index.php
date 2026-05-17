@@ -111,5 +111,10 @@ if($ruta == "apoderados"){
     include "views/apoderado.php";
 
 }
+if($ruta == "evaluacion"){
+
+    include "views/evaluacion.php";
+
+}
 
 ?>
