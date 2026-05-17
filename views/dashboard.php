@@ -100,7 +100,7 @@ if(!isset($_SESSION["login"])){
             </li>
 
             <li>
-                <a href="#">
+                <a href="index.php?ruta=aula" class="btn btn-primary">
                     <i class="fa-solid fa-school"></i>
                     Aulas
                 </a>
@@ -210,6 +210,7 @@ if(!isset($_SESSION["login"])){
                     Configuración
                 </a>
             </li>
+            
 
         </ul>
 

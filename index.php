@@ -45,6 +45,11 @@ if($ruta == "curso"){
     include "views/curso.php";
 
 }
+if($ruta == "aula"){
+
+    include "views/aula.php";
+
+}
 // alias por compatibilidad
 if($ruta == "apoderados"){
 
