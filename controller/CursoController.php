@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/../model/Curso.php';
+
 class CursoController {
 
     public static function listarCursos() {

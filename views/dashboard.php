@@ -135,7 +135,7 @@ if(!isset($_SESSION["login"])){
             </li>
 
             <li>
-                <a href="#">
+                <a href="index.php?ruta=asistencia" class="btn btn-primary">
                     <i class="fa-solid fa-calendar-check"></i>
                     Asistencias
                 </a>

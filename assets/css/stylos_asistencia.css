@@ -1,0 +1,194 @@
+:root {
+    --cepre-dark: #1a3a34; 
+    --cepre-green: #009d71;
+    --cepre-yellow: #f9bc35;
+    --presente: #27ae60;
+    --tardanza: #f1c40f;
+    --falta: #e74c3c;
+    --negro-puro: #000000;
+}
+
+body { background-color: #f8fafb; font-family: 'Segoe UI', sans-serif; }
+
+.asistencia-container { max-width: 1150px; margin: 0 auto; }
+
+/* --- FILTROS --- */
+.filtros-card {
+    border: none;
+    border-radius: 20px;
+    background: rgb(213, 233, 238);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.label-filtro {
+    font-weight: 800;
+    color: var(--cepre-dark);
+    margin-right: 80px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.form-select-custom, .form-control-custom {
+    font-size: 16px !important;
+    color: var(--negro-puro) !important;
+    font-weight: 900;
+    border: 2px solid var(--cepre-green) !important;
+    border-radius: 10px !important;
+}
+
+/* --- CABECERA --- */
+.header-cepre {
+    background: linear-gradient(135deg, var(--cepre-dark), var(--cepre-green));
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 5px solid var(--cepre-yellow);
+}
+
+.header-cepre h1 {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* --- TABLA --- */
+.card-main {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: white;
+}
+
+.asistencia-table { width: 100%; border-collapse: collapse; }
+
+.asistencia-table thead th {
+    background-color: #e6f0e8;
+    padding: 20px;
+    font-size: 13px;
+    color: var(--negro-puro);
+    text-transform: uppercase;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.asistencia-table tbody td {
+    padding: 22px 15px;
+    border-bottom: 1px solid #b0c9e3;
+    vertical-align: middle;
+}
+
+.asistencia-table tbody tr:hover td {
+    background-color: #eef2f7; /* Color de realce al pasar el mouse */
+}
+
+/* --- ESTILO DEL NOMBRE (MÁS GRANDE Y NEGRO) --- */
+.nombre-estudiante {
+    font-size: 20px; /* Tamaño grande */
+    font-weight: 400; /* Negrita máxima */
+    color: var(--negro-puro);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.row-number {
+    font-size: 18px;
+    font-weight: 800;
+    color: #cbd5e0;
+}
+
+.foto-perfil {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #d1cece;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* --- BOTONES DE ASISTENCIA --- */
+.btn-group-asistencia { display: flex; justify-content: center; gap: 12px; }
+.input-check { display: none; }
+
+.btn-asist {
+    width: 95px;
+    height: 70px;
+    border: 2px solid #bed3ef;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #ffffff;
+    transition: 0.2s;
+}
+
+.btn-asist i { font-size: 22px; margin-bottom: 5px; color: #cbd5e0; }
+.btn-asist span { font-size: 10px; font-weight: 800; text-transform: uppercase; color: var(--negro-puro); }
+
+/* ESTADOS ACTIVOS */
+.input-check:checked + .btn-presente { background: var(--presente); border-color: var(--presente); }
+.input-check:checked + .btn-tardanza { background: var(--tardanza); border-color: var(--tardanza); }
+.input-check:checked + .btn-falta { background: var(--falta); border-color: var(--falta); }
+
+.input-check:checked + .btn-asist i,
+.input-check:checked + .btn-asist span { color: white !important; }
+
+/* --- BOTÓN GUARDAR --- */
+.footer-save {
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.btn-guardar-pro {
+    background: var(--cepre-dark);
+    color: white;
+    border: none;
+    padding: 18px 80px;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.btn-guardar-pro:hover {
+    background: #605d5d;
+    transform: translateY(-3px);
+}
+/* Botón Volver Personalizado */
+.btn-volver-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 12px; /* Redondeado moderno */
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Color Gris para el botón secundario */
+.btn-secundario {
+    background: #6c757d;
+    color: #ffffff !important;
+    box-shadow: 0 8px 20px rgba(108, 117, 125, 0.25);
+}
+
+.btn-secundario:hover {
+    background: #5a6268;
+    transform: translateY(-2px); 
+    box-shadow: 0 10px 25px rgba(108, 117, 125, 0.4);
+}
+
+.btn-guardar-pro {
+    min-width: 280px;
+    border-radius: 12px;
+}

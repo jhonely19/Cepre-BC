@@ -122,4 +122,10 @@ if($ruta == "nota"){
 
 }
 
+if($ruta == "asistencia"){
+
+    include "views/asistencia.php";
+
+}
+
 ?>
