@@ -71,7 +71,8 @@ if(!isset($_SESSION["login"])){
             </li>
 
             <li>
-                <a href="#">
+                <a href="index.php?ruta=apoderado" class="btn btn-primary">
+
                     <i class="fa-solid fa-people-roof"></i>
                     Apoderados
                 </a>

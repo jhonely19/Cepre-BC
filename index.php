@@ -30,5 +30,18 @@ if($ruta == "estudiantes"){
     include "views/estudiantes.php";
 
 }
+if($ruta == "apoderado"){
+
+    include "views/apoderado.php";
+
+}
+
+// alias por compatibilidad
+if($ruta == "apoderados"){
+
+    include "views/apoderado.php";
+
+}
+
 
 ?>
