@@ -1,6 +1,9 @@
 <?php
 
-session_start();
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
+
 
 if(!isset($_SESSION["login"])){
 
@@ -22,6 +25,7 @@ if(!isset($_SESSION["login"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dashboard CEPRE BC</title>
+    <link rel="icon" type="image/png" href="assets/img/logos/logo.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -41,7 +45,7 @@ if(!isset($_SESSION["login"])){
 
         <div class="logo">
 
-            <img src="imagenes/logo.png">
+            <img src="assets/img/logos/logo.png" alt="CEPRE BC">
 
             <h2>CEPRE BC</h2>
 
@@ -50,14 +54,14 @@ if(!isset($_SESSION["login"])){
         <ul>
 
             <li>
-                <a href="#">
+                <a href="index.php?ruta=dashboard">
                     <i class="fa-solid fa-house"></i>
                     Dashboard
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a href="index.php?ruta=usuario">
                     <i class="fa-solid fa-users"></i>
                     Usuarios
                 </a>
@@ -149,7 +153,7 @@ if(!isset($_SESSION["login"])){
             </li>
 
             <li>
-                <a href="#">
+                <a href="index.php?ruta=comprobante" class="btn btn-primary">
                     <i class="fa-solid fa-receipt"></i>
                     Comprobantes
                 </a>
@@ -256,7 +260,9 @@ if(!isset($_SESSION["login"])){
 
         <div class="container-fluid mt-4">
 
-            <div class="row g-4">
+                <div class="row g-4">
+
+
 
                 <div class="col-lg-3 col-md-6">
 
@@ -318,13 +324,13 @@ if(!isset($_SESSION["login"])){
 
                         <div>
 
-                            <h5>Pagos</h5>
+                            <h5>Pagos pendientes</h5>
 
-                            <h2>S/ 12000</h2>
+                            <h2>8</h2>
 
                         </div>
 
-                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <i class="fa-solid fa-hourglass-half"></i>
 
                     </div>
 
@@ -334,12 +340,21 @@ if(!isset($_SESSION["login"])){
 
         </div>
 
+
+        <!-- CONTENIDO TABLAS DEBAJO DE LOS CARDS -->
+        <div class="container-fluid mt-0">
+            <?php include __DIR__ . '/partials/dashboard_tables.php'; ?>
+        </div>
+
     </main>
 
 </div>
+
+
 
 
 <script src="assets/js/app.js"></script>
 
 </body>
 </html>
+

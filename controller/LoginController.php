@@ -15,9 +15,12 @@ class LoginController{
 
             if($respuesta){
 
-                if($respuesta["clave"] == $clave){
+                if(password_verify($clave, $respuesta["clave"])){ 
 
-                    session_start();
+                    if (session_status() === PHP_SESSION_NONE) {
+                        session_start();
+                    }
+
 
                     $_SESSION["login"] = "ok";
                     $_SESSION["usuario"] = $respuesta["usuario"];
@@ -26,23 +29,18 @@ class LoginController{
 
                 }else{
 
-                    echo "
-                    <script>
-                        alert('Contraseña incorrecta');
-                    </script>
-                    ";
-
+                    // Evita imprimir antes de hacer redirects/headers
+                    header("Location:index.php?ruta=login&error=clave");
+                    exit;
                 }
 
             }else{
 
-                echo "
-                <script>
-                    alert('Usuario incorrecto');
-                </script>
-                ";
-
+                // Evita imprimir antes de hacer redirects/headers
+                header("Location:index.php?ruta=login&error=usuario");
+                exit;
             }
+
 
         }
 

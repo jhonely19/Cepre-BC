@@ -1,0 +1,92 @@
+/* --- FONDO Y CUERPO --- */
+body {
+    background: #f4f7fc !important;
+}
+
+/* --- TITULOS --- */
+h2.fw-bold {
+    color: #2c3e50;
+    letter-spacing: -1px;
+}
+
+/* --- TARJETAS (CARDS) --- */
+.card.rounded-4 {
+    border-radius: 1rem !important;
+    border: none !important;
+}
+
+/* Encabezado del Formulario */
+.card-header.bg-primary {
+    background-color: #0d6efd !important;
+    border: none;
+}
+
+/* Encabezado de la Tabla (Negro como tienes en tu código) */
+.card-header.bg-dark {
+    background-color: #212529 !important;
+}
+
+/* --- INPUTS Y FORMULARIO --- */
+.form-control, .form-select {
+    border: 2px solid #dee2e6 !important;
+    border-radius: 8px !important;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1) !important;
+}
+
+label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 5px;
+}
+
+/* --- TABLA: COLOR DE FONDO (Lo que pediste) --- */
+/* Esta parte le da el color al fondo de ID, Estudiante, Concepto, etc. */
+.table-primary th {
+    background-color: #2c3e50 !important; /* Azul profesional oscuro */
+    color: #ffffff !important;           /* Letras blancas */
+    padding: 15px !important;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: none !important;
+}
+
+.table tbody td {
+    padding: 12px 10px !important;
+    vertical-align: middle;
+}
+
+/* Efecto al pasar el mouse por las filas */
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* --- FOTO DE ESTUDIANTE --- */
+.table img {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    border: 2px solid white;
+}
+
+/* --- BOTONES --- */
+.btn-primary {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+}
+
+.btn-warning, .btn-danger {
+    border-radius: 6px;
+    padding: 6px 10px;
+}
